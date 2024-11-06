@@ -1,0 +1,442 @@
+<html>
+<head>
+<title>TestNG:  Test-------->chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test-------->chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/5</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 24 15:01:03 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>126 seconds (126692 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-1382973704" onClick='toggleBox("Output-1382973704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1382973704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1382973704">
+I--Test Execution Starts.....<br/>
+I--Test Execution Fails.....<br/>
+Screenshot is Taken....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_88795] but found [Facebook_8879]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1382973704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1382973704'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_88795] but found [Facebook_8879]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.deleteOrg()'><b>deleteOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-2111615196" onClick='toggleBox("Output-2111615196", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2111615196" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2111615196">
+I--Test Execution Starts.....<br/>
+Organisation deleted Successfully.......<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrgWithCredentials()'><b>createOrgWithCredentials</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-1495791876" onClick='toggleBox("Output-1495791876", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1495791876" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1495791876">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrgWithContact()'><b>createOrgWithContact</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-1413306467" onClick='toggleBox("Output-1413306467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1413306467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1413306467">
+I--Test Execution Starts.....<br/>
+I--Test Execution Success.....<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-50173263" onClick='toggleBox("Output-50173263", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-50173263" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-50173263">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_7235] but found [Facebook_723]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace50173263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace50173263'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_7235] but found [Facebook_723]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-2084041029" onClick='toggleBox("Output-2084041029", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2084041029" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2084041029">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_86985] but found [Facebook_8698]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2084041029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2084041029'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_86985] but found [Facebook_8698]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-886510498" onClick='toggleBox("Output-886510498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-886510498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-886510498">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_80085] but found [Facebook_8008]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace886510498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace886510498'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_80085] but found [Facebook_8008]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-1576936424" onClick='toggleBox("Output-1576936424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1576936424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1576936424">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_87065] but found [Facebook_8706]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1576936424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1576936424'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_87065] but found [Facebook_8706]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+<tr>
+<td title='com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg()'><b>createOrg</b><br>Test class: com.CRM.OrganisationTest.TestScriptForOrganisation<br/>
+<a href="#Output-1434367299" onClick='toggleBox("Output-1434367299", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1434367299" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1434367299">
+I--Test Execution Starts.....<br/>
+I--Test Execution Skipped.....<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_74635] but found [Facebook_7463]
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1434367299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1434367299'><pre>java.lang.AssertionError: The following asserts failed:
+	Organization is created expected [Facebook_74635] but found [Facebook_7463]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at com.CRM.ObjectRepository.OrganisationInfoPage.verifyOrgName(OrganisationInfoPage.java:120)
+	at com.CRM.OrganisationTest.TestScriptForOrganisation.createOrg(TestScriptForOrganisation.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>com.CRM.OrganisationTest.TestScriptForOrganisation@4218d6a3</td></tr>
+</table><p>
+</body>
+</html>

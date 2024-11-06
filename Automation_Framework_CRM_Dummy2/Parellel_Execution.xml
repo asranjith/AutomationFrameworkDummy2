@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" parallel="tests" name="Suite">
+	<test name="Test_1">
+		<classes>
+			<class name="com.CRM.ServicesTest.TestScriptForServices">
+				<methods>
+					<include name="addServiceName"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test name="Test_2">
+		<classes>
+			<class name="com.CRM.ContactTest.TestScriptForCont">
+				<methods>
+					<include name="createContact"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test name="Test_3">
+		<classes>
+			<class name="com.CRM.LeadsTest.TestScriptForLeads">
+				<methods>
+					<include name="createLeads"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test name="Test_4">
+		<classes>
+			<class name="com.CRM.OrganisationTest.TestScriptForOrganisation">
+				<methods>
+					<include name="createOrg"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+
+	<test name="Test_5">
+		<classes>
+			<class name="com.CRM.ProductsTest.TestScriptForProducts">
+				<methods>
+					<include name="addProductName"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+
+
+</suite> <!--
+Suite -->
